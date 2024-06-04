@@ -1,7 +1,7 @@
 {
 	"id": "companion-module-vicreo-display",
 	"name": "vicreo-display",
-	"shortname": "vicreo-display",
+	"shortname": "VICREO-Display",
 	"description": "Module to get feedback from de vicreo-display",
 	"version": "0.0.1",
 	"license": "MIT",
@@ -21,6 +21,6 @@
 	},
 	"legacyIds": [],
 	"manufacturer": "VICREO",
-	"products": ["vicreo-display"],
+	"products": ["Display"],
 	"keywords": []
 }
