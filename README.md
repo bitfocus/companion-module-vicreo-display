@@ -1,3 +1,3 @@
-# companion-module-[replace with module name]
+# ccompanion-module-vicreo-display
 
 See [HELP.md](./companion/HELP.md) and [LICENSE](./LICENSE)

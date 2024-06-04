@@ -1,3 +1,3 @@
-## Your module
+## VICREO Display
 
-Write some help for your users here!
+Module to receive feedback

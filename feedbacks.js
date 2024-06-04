@@ -2,27 +2,24 @@ const { combineRgb } = require('@companion-module/base')
 
 module.exports = async function (self) {
 	self.setFeedbackDefinitions({
-		ChannelState: {
-			name: 'Example Feedback',
+		status: {
+			name: 'Forward',
 			type: 'boolean',
-			label: 'Channel State',
+			label: 'pressed right',
 			defaultStyle: {
 				bgcolor: combineRgb(255, 0, 0),
 				color: combineRgb(0, 0, 0),
 			},
-			options: [
-				{
-					id: 'num',
-					type: 'number',
-					label: 'Test',
-					default: 5,
-					min: 0,
-					max: 10,
-				},
-			],
-			callback: (feedback) => {
-				console.log('Hello world!', feedback.options.num)
-				if (feedback.options.num > 5) {
+			options: [{
+				type: 'dropdown',
+				label: 'status',
+				choices: [{ id: 'right', label: 'pressed right'},{ id: 'left', label: 'pressed left'}],
+				id: 'status',
+				default: 'right',
+			}],
+			callback: (feedbacks) => {
+				console.log('Feedback check')
+				if (self.controlStatus === feedbacks.options.status) {
 					return true
 				} else {
 					return false
