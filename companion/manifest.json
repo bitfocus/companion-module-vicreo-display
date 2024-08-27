@@ -1,9 +1,9 @@
 {
-	"id": "companion-module-vicreo-display",
+	"id": "vicreo-display",
 	"name": "vicreo-display",
 	"shortname": "VICREO-Display",
 	"description": "Module to get feedback from de vicreo-display",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-vicreo-display.git",
 	"bugs": "https://github.com/bitfocus/companion-module-vicreo-display/issues",
@@ -19,7 +19,7 @@
 		"apiVersion": "0.0.0",
 		"entrypoint": "../main.js"
 	},
-	"legacyIds": [],
+	"legacyIds": ["companion-module-vicreo-display"],
 	"manufacturer": "VICREO",
 	"products": ["Display"],
 	"keywords": []
